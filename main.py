@@ -36,7 +36,7 @@ sys.path.append(os.path.abspath("workshop_modules"))
 
 # Import modules even if some dependencies are missing
 try:
-    import python_basics
+    from workshop_modules import python_basics
     modules_found = True
 except ImportError:
     modules_found = False

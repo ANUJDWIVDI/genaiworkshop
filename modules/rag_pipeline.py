@@ -577,7 +577,7 @@ from langchain.schema.runnable import RunnablePassthrough
 from langchain.prompts import PromptTemplate
 
 # Define the prompt template
-prompt_template = """
+prompt_template = ""
 You are an AI assistant providing accurate information based on the given context.
 Answer the question based only on the provided context. If the context doesn't 
 contain the answer, say "I don't have enough information to answer this question."
@@ -589,7 +589,7 @@ Question:
 {question}
 
 Answer:
-"""
+""
 
 prompt = PromptTemplate.from_template(prompt_template)
 
