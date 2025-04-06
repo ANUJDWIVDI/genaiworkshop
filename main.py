@@ -1,21 +1,20 @@
-import streamlit as st
-import importlib.util
-import sys
 import os
-import pandas as pd
-#pip install psycopg2-binary
-#pip install passlib
+import sys
 
+# Fix 1: Force Python to use pysqlite3 for updated SQLite
+try:
+    import pysqlite3
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+except ImportError:
+    raise RuntimeError("pysqlite3 is required but not installed. Install it using 'pip install pysqlite3-binary'.")
 
-# Import our custom modules
-from utils.auth_utils import display_auth_page, init_auth_state, logout_user
-from utils.db_utils import init_connection_pool
-from utils.progress_utils import display_progress_dashboard, get_module_completion_status
-from utils.api_key_utils import display_api_key_form, initialize_api_keys
-from utils.admin_utils import display_admin_login, display_admin_dashboard, check_module_access, is_admin
-from utils.messaging_utils import display_user_messaging, display_admin_messaging, get_unread_message_count
+# Fix 2: Disable Streamlit's file watcher to avoid PyTorch conflicts
+os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
 
-# Set page configuration
+# Streamlit imports
+import streamlit as st
+
+# Set page configuration (must be the first Streamlit command)
 st.set_page_config(
     page_title="GenAI & LLM Workshop",
     page_icon="🚀",
@@ -23,6 +22,20 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Other imports
+import pandas as pd
+from utils.auth_utils import display_auth_page, init_auth_state, logout_user
+from utils.db_utils import init_connection_pool
+from utils.progress_utils import display_progress_dashboard, get_module_completion_status
+from utils.api_key_utils import display_api_key_form, initialize_api_keys
+from utils.admin_utils import display_admin_login, display_admin_dashboard, check_module_access, is_admin
+from utils.messaging_utils import display_user_messaging, display_admin_messaging, get_unread_message_count
+import importlib
+import logging
+import traceback
+import warnings
+
+# Your remaining code...
 # Check if required packages are installed
 def is_package_installed(package_name):
     try:
