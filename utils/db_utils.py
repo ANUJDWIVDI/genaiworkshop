@@ -10,34 +10,25 @@ import time
 # Create a connection pool
 connection_pool = None
 
+# Using the complete connection string
+DATABASE_URL = "postgresql://neondb_owner:npg_H7bwI3rGxTvA@ep-hidden-glitter-a6bz0czt.us-west-2.aws.neon.tech/neondb?sslmode=require"
+
 def init_connection_pool():
-    """Initialize the database connection pool for local PostgreSQL."""
+    """Initialize connection pool using DATABASE_URL"""
     global connection_pool
     try:
         if connection_pool is None:
-            # Local PostgreSQL connection configuration
             connection_pool = pool.ThreadedConnectionPool(
                 minconn=1,
                 maxconn=10,
-                host="localhost",
-                database="workshop_db",
-                user="workshop_user",
-                password="workshop_pass",
-                port="5432"
+                dsn=DATABASE_URL  # Directly use the connection string
             )
-            
-            # Test the connection
-            with get_connection() as conn:
-                with conn.cursor() as cur:
-                    cur.execute("SELECT version();")
-                    version = cur.fetchone()
-                    print(f"Connected to PostgreSQL: {version[0]}")
-            
+            # Test connection...
             return True
     except Exception as e:
-        st.error(f"Database connection error: {e}")
+        print(f"Connection error: {e}")
         return False
-
+    
 @contextmanager
 def get_connection():
     """Get a connection from the pool and handle cleanup."""

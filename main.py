@@ -54,7 +54,7 @@ if modules_found:
     try:
         # Try to import modules - we'll handle any runtime errors later
         sys.path.append(os.path.abspath("modules"))
-        from modules import genai_intro, advanced_llms, rag_pipeline, chatbot_app
+        from modules import genai_intro, advanced_llms, rag_pipeline, chatbot_app 
         all_modules_available = True 
     except (ImportError, ModuleNotFoundError):
         pass
