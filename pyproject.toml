@@ -1,0 +1,27 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "bcrypt>=4.3.0",
+    "langchain<0.1.0",
+    "modules>=1.0.0",
+    "openai>=1.70.0",
+    "pandas>=2.2.3",
+    "passlib>=1.7.4",
+    "plotly>=6.0.1",
+    "psycopg2-binary>=2.9.10",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.1.0",
+    "streamlit>=1.44.1",
+    "transformers>=4.20.0",
+    "sentence-transformers>=2.2.2",
+    "chromadb>=0.4.0",
+    "torch>=1.12.0",
+]
+
+[[tool.uv.index]]
+explicit = true
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"

@@ -1,0 +1,80 @@
+AI Workshop Tools and Resources
+===============================
+
+LLM and AI Services
+------------------
+- OpenAI API: https://platform.openai.com/ - For GPT models
+- Hugging Face: https://huggingface.co/spaces - Free LLMs like Mistral-7B, BLOOM
+- Ollama: https://ollama.ai - Run LLaMA 3/Mistral locally
+- Google AI Studio: https://aistudio.google.com/ - For Gemma models
+- Anthropic Claude: https://console.anthropic.com/ - Claude API
+
+Prompt Engineering
+-----------------
+- Learn Prompting: https://learnprompting.org - Comprehensive guide
+- Awesome ChatGPT Prompts: https://github.com/f/awesome-chatgpt-prompts
+
+Image Generation
+---------------
+- DALL-E API: https://openai.com/dall-e-3 - OpenAI's image generation
+- Stability AI: https://stability.ai/platform - Stable Diffusion
+- Craiyon: https://www.craiyon.com - Free image generation
+
+Development Environments
+----------------------
+- Google Colab: https://colab.research.google.com - Free GPU/TPU access
+- Kaggle Kernels: https://www.kaggle.com/kernels - Free notebooks with competitions
+- Replit: https://replit.com - Browser-based IDE
+
+Key Libraries and Frameworks
+--------------------------
+- LangChain: https://python.langchain.com - Orchestrate prompts and retrieval
+- Transformers: https://huggingface.co/docs/transformers/index - Hugging Face
+- Sentence Transformers: https://www.sbert.net - State-of-the-art embeddings
+- ChromaDB: https://docs.trychroma.com - Vector database
+- FAISS: https://github.com/facebookresearch/faiss - Similarity search
+- PyPDF2: https://pypi.org/project/PyPDF2 - Extract text from PDF files
+- PEFT: https://github.com/huggingface/peft - Parameter-Efficient Fine-Tuning
+
+UI and Deployment
+---------------
+- Streamlit: https://streamlit.io - Interactive web apps
+- Gradio: https://gradio.app - Build interactive UIs in Python
+- Flask: https://flask.palletsprojects.com - Lightweight Python web framework
+- FastAPI: https://fastapi.tiangolo.com - Modern, fast web framework
+
+Data and API Sources
+------------------
+- OpenWeatherMap: https://openweathermap.org/api - Weather data
+- RapidAPI: https://rapidapi.com - Aggregated free APIs
+- Postman: https://www.postman.com - Free API testing
+
+UI and Visualization
+------------------
+- Excalidraw: https://excalidraw.com - Hand-drawn style diagrams
+- Draw.io: https://draw.io - Flowchart creation
+- Carbon: https://carbon.now.sh - Create beautiful code screenshots
+
+Learning Resources
+---------------
+- Papers with Code: https://paperswithcode.com - Research implementations
+- arXiv: https://arxiv.org - Latest preprints on AI topics
+- Fast.ai: https://www.fast.ai - Free deep learning courses
+- DeepLearning.AI: https://www.deeplearning.ai - Free webinars and resources
+
+API Keys for Workshop App
+----------------------
+1. OpenAI API Key - Required for GPT models
+   - Get one at: https://platform.openai.com/account/api-keys
+
+2. Hugging Face API Key - Optional for advanced model access
+   - Get one at: https://huggingface.co/settings/tokens
+
+3. Gemma API Key - Optional for Google's Gemma models
+   - Get one at: https://aistudio.google.com/
+
+4. Anthropic API Key (Claude) - Optional for Claude models
+   - Get one at: https://console.anthropic.com/
+
+5. Stability AI Key - Optional for Stable Diffusion image generation
+   - Get one at: https://stability.ai/platform

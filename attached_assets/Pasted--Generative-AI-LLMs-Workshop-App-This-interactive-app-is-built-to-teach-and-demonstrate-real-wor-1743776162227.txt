@@ -1,0 +1,75 @@
+🚀 Generative AI + LLMs Workshop App
+This interactive app is built to teach and demonstrate real-world applications of Generative AI and Large Language Models (LLMs). It covers key concepts, tools, and use cases from the basics of Python to advanced LLM-powered chatbots using RAG (Retrieval Augmented Generation).
+
+📚 Modules Covered
+✅ Python Essentials for AI
+Learn Python syntax, APIs, and data manipulation techniques using pandas, numpy, and real-world APIs.
+
+🧠 Intro to Generative AI & LLMs
+Explore Hugging Face models like GPT-2 and BERT. Try out text generation, summarization, and sentiment analysis using transformers.
+
+🔍 Advanced LLM Concepts
+Understand prompt engineering, tokenization, fine-tuning (LoRA, PEFT), and experiment with temperature, top-k, and top-p decoding.
+
+📄 RAG (Retrieval-Augmented Generation)
+Combine LangChain and ChromaDB to build a chatbot that reads from custom documents, extracts context, and generates intelligent responses.
+
+🤖 Mini Project – AI Chatbot with RAG
+Upload PDFs or text files, ask questions, and get accurate answers using vector search + LLMs — all in a Gradio-powered UI.
+
+📈 Trends & Evaluation
+Explore Agentic LLMs (AutoGPT, LangGraph), Visual LLMs (LLaVA), and tools like Hugging Face Evaluate, LangSmith, and more.
+
+🛠 Tech Stack
+🐍 Python 3.10+
+
+🤗 Transformers (Hugging Face)
+
+🧠 LangChain
+
+🔎 ChromaDB / FAISS
+
+🎨 Gradio or Streamlit
+
+📦 Torch, Sentence Transformers, OpenAI APIs (optional)
+
+✅ What You Can Do With This App
+Generate text and analyze it with LLMs
+
+Learn how prompts impact model outputs
+
+Upload documents and ask questions (RAG)
+
+Build and deploy a chatbot inside Replit
+
+Evaluate different decoding strategies and response quality
+
+🧪 Live Demo in Replit
+Just click "Run" to start the app. Open the Webview tab to interact with the Gradio or Streamlit interface.
+
+You can:
+
+Try different models
+
+Upload your own text or files
+
+Customize the chatbot prompts
+
+Watch LLMs work live!
+
+📂 Folder Structure (Suggested)
+css
+Copy
+Edit
+/
+├── README.md
+├── main.py  (app launcher)
+├── modules/
+│   ├── python_basics.py
+│   ├── genai_intro.py
+│   ├── advanced_llms.py
+│   ├── rag_pipeline.py
+│   └── chatbot_app.py
+├── assets/
+│   ├── sample.pdf
+│   └── diagrams/

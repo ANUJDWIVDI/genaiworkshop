@@ -1,0 +1,33 @@
+This is a placeholder for a PDF file. In a real implementation, you would include an actual PDF file with educational content about Generative AI, LLMs, or RAG systems. The file would contain structured information that could be used for demonstrating the document processing and question-answering capabilities of the chatbot.
+
+Topics that would be covered in this PDF:
+
+1. Introduction to Large Language Models (LLMs)
+   - Definition and core concepts
+   - Evolution from traditional NLP models
+   - Key architectural components like attention mechanisms
+
+2. How LLMs Work
+   - Transformer architecture
+   - Self-attention and cross-attention
+   - Token prediction and generation
+
+3. Retrieval-Augmented Generation (RAG)
+   - Concept and motivation
+   - Components: retriever and generator
+   - Vector databases and embeddings
+   - Advantages over pure generative approaches
+
+4. Practical Applications
+   - Question answering systems
+   - Document summarization
+   - Conversational AI
+   - Knowledge management
+
+5. Limitations and Challenges
+   - Hallucinations
+   - Context window constraints
+   - Computational requirements
+   - Ensuring factual accuracy
+
+This PDF would serve as example data for the RAG chatbot to process, index, and respond to queries about.

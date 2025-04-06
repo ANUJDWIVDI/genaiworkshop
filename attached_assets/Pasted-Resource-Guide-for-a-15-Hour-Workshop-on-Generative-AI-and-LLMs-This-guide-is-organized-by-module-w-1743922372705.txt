@@ -1,0 +1,252 @@
+Resource Guide for a 15‑Hour Workshop on Generative AI and LLMs
+This guide is organized by module, with practical demos, visual slides, and hands‑on activities. Every section lists free tools, frameworks, and extra resources that you can utilize to build engaging sessions for your audience.
+
+Module 1: Python Essentials for AI (2 Hours)
+Key Tools & Resources
+
+Interactive Coding & Notebooks
+
+Google Colab (free GPU/TPU access): colab.research.google.com
+
+Replit (browser‑based IDE): replit.com
+
+Binder (launch interactive Jupyter notebooks in the cloud): mybinder.org
+
+Kaggle Kernels (free notebooks with pre‑configured environments): kaggle.com/kernels
+
+Visual Studio Code – Web (GitHub Codespaces): github.com/features/codespaces
+
+APIs & Data Handling
+
+Public APIs for Practice:
+
+OpenWeatherMap (weather data): openweathermap.org/api
+
+Twitter API (free tier for tweets): developer.twitter.com
+
+RapidAPI (aggregated free APIs): rapidapi.com
+
+JSON Formatter & Validator: jsonformatter.org
+
+Postman (free API testing and collaboration): postman.com
+
+Essential Libraries & Tools
+
+Python libraries: requests (API calls), pandas (dataframes), numpy (numerical computations), and transformers (Hugging Face models)
+
+Additional Visual Tools for Code:
+
+Carbon (create beautiful code screenshots for slides): carbon.now.sh
+
+Hands‑On Demo Idea
+
+Task: Fetch tweets using the Twitter API, process the data with pandas and numpy, then perform keyword counting and visualizations using matplotlib or seaborn.
+
+Visual: Generate attractive code screenshots using Carbon, and demonstrate live coding via Google Colab or Replit.
+
+Module 2: Introduction to Generative AI & LLMs (3 Hours)
+Key Tools & Resources
+
+LLM Playgrounds & Interactive Demos
+
+Hugging Face Spaces (free LLMs like Mistral‑7B, BLOOM, etc.): huggingface.co/spaces
+
+Ollama (run LLaMA 3/Mistral locally): ollama.ai
+
+EleutherAI’s GPT‑Neo Playground (free experiments): 6b.eleuther.ai
+
+Prompt Engineering & Learning
+
+ChatGPT Playground: platform.openai.com/playground
+
+Learn Prompting (free comprehensive guide): learnprompting.org
+
+Awesome ChatGPT Prompts (community‑curated examples): github.com/f/awesome-chatgpt-prompts
+
+Visualizations & Diagrams
+
+Excalidraw (hand‑drawn style diagrams to illustrate transformer architectures): excalidraw.com
+
+Transformer GIFs: GitHub - tensorflow/transformer_animations
+
+Craiyon (formerly DALL‑E Mini for AI‑generated images): craiyon.com
+
+Hands‑On Demo Idea
+
+Task: Compare outputs from GPT‑3.5 and Mistral‑7B at varying temperatures. Discuss prompt engineering techniques and illustrate differences using side‑by‑side code examples and live demos in a Jupyter Notebook.
+
+Module 3: Advanced LLM Concepts (3 Hours)
+Key Tools & Resources
+
+Fine‑Tuning & Parameter‑Efficient Fine‑Tuning (PEFT)
+
+Hugging Face PEFT (LoRA/Adapters for efficient fine‑tuning): github.com/huggingface/peft
+
+Google Colab Pro (access free T4 GPUs for training experiments): colab.research.google.com
+
+PyTorch Lightning (for streamlined training loops): pytorchlightning.ai
+
+Bias Analysis & Ethical AI
+
+AI Fairness 360 Toolkit: aif360.mybluemix.net
+
+IBM AI Fairness 360: Additional documentation and examples available on GitHub
+
+Model Compression & Optimization
+
+GGML (quantize models for efficiency): github.com/ggerganov/ggml
+
+Open Neural Network Exchange (ONNX) for model export and optimization: onnx.ai
+
+Hands‑On Demo Idea
+
+Task: Use LoRA to fine‑tune a small FLAN‑T5 model on a custom dataset (e.g., movie reviews) and compare performance pre‑ and post‑fine‑tuning.
+
+Visual: Walk through the training pipeline in a Colab notebook and showcase key metrics with graphs.
+
+Module 4: Retrieval‑Augmented Generation (RAG) (3 Hours)
+Key Tools & Resources
+
+Vector Databases & Embedding Stores
+
+ChromaDB (open‑source, local setup): docs.trychroma.com
+
+FAISS (Facebook’s efficient similarity search): github.com/facebookresearch/faiss
+
+Weaviate (open‑source vector search engine with a free community edition): weaviate.io
+
+RAG Workflow Orchestration
+
+LangChain (orchestrate prompts and retrieval): python.langchain.com
+
+Sentence Transformers (state‑of‑the‑art embeddings): sbert.net
+
+Haystack (end‑to‑end framework for building search and Q&A systems): github.com/deepset-ai/haystack
+
+Hands‑On Demo Idea
+
+Task: Build a RAG system using a subset of Wikipedia data. Extract text, create embeddings with Sentence Transformers, store them in ChromaDB (or Weaviate), and integrate the retrieval system with LangChain to answer queries.
+
+Visual: Use Mermaid.js flowcharts to diagram the end‑to‑end data flow.
+
+Module 5: Mini‑Project – AI Chatbot with RAG (4 Hours)
+Key Tools & Resources
+
+UI/Backend Development
+
+Gradio (build interactive UIs in Python quickly): gradio.app
+
+Streamlit (deploy interactive web apps; free hosting available): streamlit.io
+
+Flask and FastAPI (lightweight Python frameworks for building APIs): flask.palletsprojects.com | fastapi.tiangolo.com
+
+Hosting & Deployment
+
+Hugging Face Spaces (deploy your chatbot for free): huggingface.co/spaces
+
+GitHub Pages (host static sites and demos): pages.github.com
+
+Data Extraction & Processing
+
+PyPDF2 (extract text from PDF files): pypi.org/project/PyPDF2
+
+Tika (another option for robust document parsing): tika.apache.org
+
+Project Idea
+
+Build a PDF Q&A Chatbot:
+
+Extract text from PDFs using PyPDF2 or Tika.
+
+Compute and store embeddings in ChromaDB (or FAISS/Weaviate).
+
+Integrate with OpenAI, Mistral, or another LLM via LangChain for query answering.
+
+Develop a simple UI with Gradio or Streamlit for user interaction.
+
+Module 6: Evaluation & Future Trends (1 Hour)
+Key Tools & Resources
+
+Multimodal AI
+
+LLaVA (open‑source vision‑language model): llava-vl.github.io
+
+DALL‑E Mini / Craiyon (for generating illustrative images): craiyon.com
+
+Agentic & Autonomous AI
+
+AutoGPT (explore autonomous agents): github.com/Significant-Gravitas/AutoGPT
+
+BabyAGI (another approach to autonomous task management): github.com/yoheinakajima/babyagi
+
+Research & Career Resources
+
+Papers with Code (find cutting‑edge research and implementation code): paperswithcode.com
+
+arXiv (latest preprints on AI topics): arxiv.org
+
+AI Jobs Board: ainowledge.com/jobs
+
+Discussion Points
+
+Review recent trends for 2024 such as the rise of open‑source LLMs (LLaMA 3, Mistral‑7B, Zephyr, BLOOM), the expansion of multimodal models (GPT‑4V, LLaVA, Google’s Gemini), and ongoing developments in ethics and regulation (EU AI Act, watermarking tools).
+
+Additional Free Visual & Collaboration Tools for Slides
+Diagrams & Flowcharts
+
+Draw.io (flowchart creation): draw.io
+
+Mermaid Live Editor (text‑to‑diagram conversion): mermaid.live
+
+Slide Design & Presentation
+
+Canva (free tier for slide templates): canva.com
+
+Gamma.app (AI‑assisted slide generation): gamma.app
+
+Prezi (alternative free presentation tool): prezi.com
+
+Code Visuals & Snippet Sharing
+
+Carbon (stylish code screenshots): carbon.now.sh
+
+Collaboration & Hosting
+
+GitHub (version control and code hosting): github.com
+
+Slack/Discord (community discussion and live support)
+
+Notion (free personal/team collaboration and note‑taking): notion.so
+
+Recent Trends & Future Considerations (2024 and Beyond)
+Emerging Open‑Source LLMs & Tools
+
+LLaMA 3, Mistral‑7B, Zephyr, BLOOM
+
+Enhanced agent frameworks: AutoGPT, BabyAGI
+
+Multimodal Capabilities
+
+GPT‑4V, LLaVA, Google’s Gemini
+
+Tools integrating vision, language, and audio
+
+Ethics, Regulation, & Transparency
+
+EU AI Act developments
+
+Watermarking and bias detection tools
+
+Increased focus on ethical deployment in open‑source projects
+
+Community & Educational Resources
+
+Fast.ai’s free courses on deep learning: fast.ai
+
+DeepLearning.AI’s free webinars and resources: deeplearning.ai
+
+Online forums (Reddit’s r/MachineLearning, Stack Overflow) for troubleshooting and community support
+
+This enhanced structure ensures your workshop is not only visually engaging—with diagrams, code snippets, and live demos—but also practically grounded by using only free-tier or open‑source tools. Each module provides a full spectrum of resources for both beginners and advanced users, giving you the flexibility to adapt demos and projects to your audience’s interests and skill levels.
+
+Let me know if you’d like further sample code snippets, slide outlines, or additional details on any specific section!
