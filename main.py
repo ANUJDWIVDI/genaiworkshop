@@ -3,6 +3,9 @@ import importlib.util
 import sys
 import os
 import pandas as pd
+#pip install psycopg2-binary
+#pip install passlib
+
 
 # Import our custom modules
 from utils.auth_utils import display_auth_page, init_auth_state, logout_user

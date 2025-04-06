@@ -11,19 +11,19 @@ import time
 connection_pool = None
 
 def init_connection_pool():
-    """Initialize the database connection pool."""
+    """Initialize the database connection pool for local PostgreSQL."""
     global connection_pool
     try:
         if connection_pool is None:
-            # Get database connection info from environment variables
-            db_url = os.environ.get('DATABASE_URL')
-            
-            # Create a connection pool with SSL mode set to require
+            # Local PostgreSQL connection configuration
             connection_pool = pool.ThreadedConnectionPool(
-                minconn=1, 
-                maxconn=10, 
-                dsn=db_url,
-                sslmode='prefer'  # Changed from 'require' to 'prefer' to avoid SSL errors
+                minconn=1,
+                maxconn=10,
+                host="localhost",
+                database="workshop_db",
+                user="workshop_user",
+                password="workshop_pass",
+                port="5432"
             )
             
             # Test the connection
